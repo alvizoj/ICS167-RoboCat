@@ -16,8 +16,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="HealthPotionClient.cpp" />
-    <ClCompile Include="SpeedPotionClient.cpp" />
+    <ClCompile Include="Src\HealthPotionClient.cpp" />
+    <ClCompile Include="Src\SpeedPotionClient.cpp" />
     <ClCompile Include="Src\YarnClient.cpp" />
     <ClCompile Include="Src\Client.cpp" />
     <ClCompile Include="Src\ClientMain.cpp" />

@@ -54,7 +54,7 @@ uint32_t SpeedPotion::Write(OutputMemoryBitStream& inOutputStream, uint32_t inDi
 	return writtenState;
 }
 
-void HealthPotion::Read(InputMemoryBitStream& inInputStream)
+void SpeedPotion::Read(InputMemoryBitStream& inInputStream)
 {
 	bool stateBit;
 

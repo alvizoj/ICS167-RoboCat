@@ -60,10 +60,10 @@
     <ClCompile Include="Src\YarnClient.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="HealthPotionClient.cpp">
+    <ClCompile Include="Src\SpeedPotionClient.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="SpeedPotionClient.cpp">
+    <ClCompile Include="Src\HealthPotionClient.cpp">
       <Filter>Src</Filter>
     </ClCompile>
   </ItemGroup>

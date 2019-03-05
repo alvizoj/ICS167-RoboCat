@@ -168,6 +168,8 @@
     <ClCompile Include="Src\HealthPotion.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="SpeedPotion.cpp" />
+    <ClCompile Include="Src\SpeedPotion.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

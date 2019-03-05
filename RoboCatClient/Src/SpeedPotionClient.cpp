@@ -1,6 +1,6 @@
 #include <RoboCatClientPCH.h>
 
-HealthPotionClient::HealthPotionClient()
+SpeedPotionClient::SpeedPotionClient()
 {
 	mSpriteComponent.reset(new SpriteComponent(this));
 	mSpriteComponent->SetTexture(TextureManager::sInstance->GetTexture("speed"));

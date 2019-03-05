@@ -398,8 +398,8 @@
     <ClInclude Include="Inc\UDPSocket.h" />
     <ClInclude Include="Inc\WeightedTimedMovingAverage.h" />
     <ClInclude Include="Inc\World.h" />
-    <ClCompile Include="SpeedPotion.cpp" />
     <ClCompile Include="Src\HealthPotion.cpp" />
+    <ClCompile Include="Src\SpeedPotion.cpp" />
     <ClCompile Include="Src\Yarn.cpp" />
     <ClCompile Include="Src\Engine.cpp" />
     <ClCompile Include="Src\GameObjectRegistry.cpp" />
