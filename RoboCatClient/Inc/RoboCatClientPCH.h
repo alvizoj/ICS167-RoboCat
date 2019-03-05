@@ -12,6 +12,7 @@
 #include <WindowManager.h>
 
 #include <RoboCatClient.h>
+#include <HealthPotionClient.h>
 #include <MouseClient.h>
 #include <YarnClient.h>
 

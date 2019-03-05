@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
       <Configuration>Debug</Configuration>
@@ -16,6 +16,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="HealthPotionClient.cpp" />
     <ClCompile Include="Src\YarnClient.cpp" />
     <ClCompile Include="Src\Client.cpp" />
     <ClCompile Include="Src\ClientMain.cpp" />
@@ -39,6 +40,7 @@
   <ItemGroup>
     <ClInclude Include="Inc\Client.h" />
     <ClInclude Include="Inc\GraphicsDriver.h" />
+    <ClInclude Include="Inc\HealthPotionClient.h" />
     <ClInclude Include="Inc\YarnClient.h" />
     <ClInclude Include="Inc\HUD.h" />
     <ClInclude Include="Inc\NetworkManagerClient.h" />
@@ -57,18 +59,19 @@
     <ProjectGuid>{5B4C5E90-6135-4E28-8545-FF1CAF5E4971}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>RoboCatClient</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>

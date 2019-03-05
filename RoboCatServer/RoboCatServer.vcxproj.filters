@@ -39,6 +39,9 @@
     <ClCompile Include="Src\YarnServer.cpp">
       <Filter>Src</Filter>
     </ClCompile>
+    <ClCompile Include="HealthPotionServer.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Inc\RoboCatServerPCH.h">
@@ -63,6 +66,9 @@
       <Filter>Inc</Filter>
     </ClInclude>
     <ClInclude Include="Inc\YarnServer.h">
+      <Filter>Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="HealthPotionServer.h">
       <Filter>Inc</Filter>
     </ClInclude>
   </ItemGroup>

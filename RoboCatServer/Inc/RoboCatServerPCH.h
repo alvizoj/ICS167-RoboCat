@@ -7,5 +7,6 @@
 #include <Server.h>
 
 #include <RoboCatServer.h>
+#include <HealthPotionServer.h>
 #include <MouseServer.h>
 #include <YarnServer.h>
