@@ -2,6 +2,7 @@
 
 
 
+
 RoboCatClient::RoboCatClient() :
 	mTimeLocationBecameOutOfSync( 0.f ),
 	mTimeVelocityBecameOutOfSync( 0.f )
@@ -30,6 +31,7 @@ void RoboCatClient::Update()
 
 void RoboCatClient::Read( InputMemoryBitStream& inInputStream )
 {
+
 	bool stateBit;
 	
 	uint32_t readState = 0;
@@ -106,4 +108,65 @@ void RoboCatClient::Read( InputMemoryBitStream& inInputStream )
 			HUD::sInstance->SetPlayerHealth( mHealth );
 		}
 	}	
+
+	bool isLocalPlayer =
+		(GetPlayerId() == NetworkManagerClient::sInstance->GetPlayerId());
+
+	if (isLocalPlayer)
+	{
+		DoClientSidePredictionAfterReplicationForLocalCat(readState);
+	}
+	else
+	{
+		DoClientSidePredictionAfterReplicationForRemoteCat(readState);
+	}
+	//if this is not a create packet, smooth out any jumps
+	//if (!IsCreatePacket(readState))
+	//{
+	//	InterpolateClientSidePrediction(
+	//		oldRotation, oldLocation, oldVelocity, !isLocalPlayer);
+	//}
+}
+
+
+void RoboCatClient::DoClientSidePredictionAfterReplicationForLocalCat(
+	uint32_t inReadState)
+{
+	//replay moves only if we received new pose
+	if ((inReadState & ECRS_Pose) != 0)
+	{
+		const MoveList& moveList = InputManager::sInstance->GetMoveList();
+		for (const Move& move : moveList)
+		{
+			float deltaTime = move.GetDeltaTime();
+			ProcessInput(deltaTime, move.GetInputState());
+			SimulateMovement(deltaTime);
+		}
+	}
+}
+
+void RoboCatClient::DoClientSidePredictionAfterReplicationForRemoteCat(
+	uint32_t inReadState)
+{
+	if ((inReadState & ECRS_Pose) != 0)
+	{
+		//simulate movement for an additional RTT
+		float rtt = NetworkManagerClient::sInstance->GetRoundTripTime();
+		//split into framelength sized chunks so we don’t run through walls
+		//and do crazy things...
+		float deltaTime = 1.f / 60.f;
+		while (true)
+		{
+			if (rtt < deltaTime)
+			{
+				SimulateMovement(rtt);
+				break;
+			}
+			else
+			{
+				SimulateMovement(deltaTime);
+				rtt -= deltaTime;
+			}
+		}
+	}
 }
