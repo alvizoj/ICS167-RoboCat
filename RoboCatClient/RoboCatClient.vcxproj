@@ -17,6 +17,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="HealthPotionClient.cpp" />
+    <ClCompile Include="SpeedPotionClient.cpp" />
     <ClCompile Include="Src\YarnClient.cpp" />
     <ClCompile Include="Src\Client.cpp" />
     <ClCompile Include="Src\ClientMain.cpp" />
@@ -54,6 +55,7 @@
     <ClInclude Include="Inc\MouseClient.h" />
     <ClInclude Include="Inc\RoboCatClientPCH.h" />
     <ClInclude Include="Inc\WindowManager.h" />
+    <ClInclude Include="SpeedPotionClient.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{5B4C5E90-6135-4E28-8545-FF1CAF5E4971}</ProjectGuid>

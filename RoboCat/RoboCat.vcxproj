@@ -398,6 +398,7 @@
     <ClInclude Include="Inc\UDPSocket.h" />
     <ClInclude Include="Inc\WeightedTimedMovingAverage.h" />
     <ClInclude Include="Inc\World.h" />
+    <ClCompile Include="SpeedPotion.cpp" />
     <ClCompile Include="Src\HealthPotion.cpp" />
     <ClCompile Include="Src\Yarn.cpp" />
     <ClCompile Include="Src\Engine.cpp" />
@@ -418,6 +419,7 @@
     <ClCompile Include="Src\Timing.cpp">
       <FileType>CppHeader</FileType>
     </ClCompile>
+    <ClInclude Include="SpeedPotion.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Src\GameObject.cpp">

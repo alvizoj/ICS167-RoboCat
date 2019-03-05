@@ -1,4 +1,6 @@
 ﻿  RoboCatPCH.cpp
+  SpeedPotion.cpp
+c1xx : fatal error C1083: Cannot open source file: 'SpeedPotion.cpp': No such file or directory
   HealthPotion.cpp
   Yarn.cpp
   Engine.cpp
@@ -19,10 +21,9 @@ c:\users\b\documents\github\ics167-robocat\robocat\src\socketutil.cpp(90): warni
   TCPSocket.cpp
   Timing.cpp
   GameObject.cpp
-  Mouse.cpp
   Generating Code...
   Compiling...
+  Mouse.cpp
   UDPSocket.cpp
   World.cpp
   Generating Code...
-  RoboCat.vcxproj -> C:\Users\B\Documents\GitHub\ICS167-RoboCat\RoboCat\Bin\Debug\RoboCat.lib

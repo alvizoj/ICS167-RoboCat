@@ -94,6 +94,9 @@
     <ClInclude Include="Inc\HealthPotion.h">
       <Filter>Inc</Filter>
     </ClInclude>
+    <ClInclude Include="SpeedPotion.h">
+      <Filter>Inc</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Src\GameObject.cpp">
@@ -165,5 +168,6 @@
     <ClCompile Include="Src\HealthPotion.cpp">
       <Filter>Src</Filter>
     </ClCompile>
+    <ClCompile Include="SpeedPotion.cpp" />
   </ItemGroup>
 </Project>

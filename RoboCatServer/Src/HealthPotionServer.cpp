@@ -16,7 +16,7 @@ bool HealthPotionServer::HandleCollisionWithCat(RoboCat* inCat)
 	//kill yourself!
 	SetDoesWantToDie(true);
 
-	static_cast<RoboCatServer*>(inCat)->ReplenishHealth(GetPlayerId());
+	static_cast<RoboCatServer*>(inCat)->ReplenishHealth();
 
 	return false;
 }

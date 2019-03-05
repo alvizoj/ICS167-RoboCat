@@ -13,6 +13,7 @@
 
 #include <RoboCatClient.h>
 #include <HealthPotionClient.h>
+#include <SpeedPotionClient.h>
 #include <MouseClient.h>
 #include <YarnClient.h>
 

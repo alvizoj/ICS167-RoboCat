@@ -18,6 +18,7 @@ Server::Server()
 	GameObjectRegistry::sInstance->RegisterCreationFunction( 'RCAT', RoboCatServer::StaticCreate );
 	GameObjectRegistry::sInstance->RegisterCreationFunction( 'MOUS', MouseServer::StaticCreate );
 	GameObjectRegistry::sInstance->RegisterCreationFunction( 'YARN', YarnServer::StaticCreate );
+	GameObjectRegistry::sInstance->RegisterCreationFunction('HPOT', HealthPotionServer::StaticCreate);
 
 	InitNetworkManager();
 	
@@ -66,6 +67,21 @@ namespace
 		}
 	}
 
+	void CreateRandomPotion(int inPotionCount)
+	{
+		Vector3 potionMin(-5.f, -3.f, 0.f);
+		Vector3 potionMax(5.f, 3.f, 0.f);
+		GameObjectPtr go;
+
+		//make a mouse somewhere- where will these come from?
+		for (int i = 0; i < inPotionCount; ++i)
+		{
+			go = GameObjectRegistry::sInstance->CreateGameObject('HPOT');
+			Vector3 potionLocation = RoboMath::GetRandomVector(potionMin, potionMax);
+			go->SetLocation(potionLocation);
+		}
+	}
+
 
 }
 
@@ -77,6 +93,8 @@ void Server::SetupWorld()
 	
 	//spawn more random mice!
 	CreateRandomMice( 10 );
+
+	CreateRandomPotion(3);
 }
 
 void Server::DoFrame()
