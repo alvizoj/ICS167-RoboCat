@@ -1,14 +1,14 @@
 ﻿  RoboCatServerPCH.cpp
-  ClientProxy.cpp
   HealthPotionServer.cpp
-  MouseServer.cpp
-  NetworkManagerServer.cpp
-  ReplicationManagerServer.cpp
-  RoboCatServer.cpp
-  Server.cpp
-  ServerMain.cpp
   SpeedPotionServer.cpp
   YarnServer.cpp
+  ClientProxy.cpp
+  ReplicationManagerServer.cpp
+  Server.cpp
+  ServerMain.cpp
+  NetworkManagerServer.cpp
+  RoboCatServer.cpp
+  MouseServer.cpp
   Generating Code...
   RoboCatServer.vcxproj -> C:\Users\B\Documents\GitHub\ICS167-RoboCat\Debug\RoboCatServer.exe
   Copying SDL DLLs...

@@ -112,7 +112,7 @@ void Server::SetupWorld()
 
 	CreateRandomPotion(3);
 
-	CreateRandomSpeedPotion(3);
+	CreateRandomSpeedPotion(5);
 }
 
 void Server::DoFrame()

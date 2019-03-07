@@ -1,6 +1,6 @@
 #include <RoboCatPCH.h>
 
-SpeedPotion::SpeedPotion() :
+SpeedPotion::SpeedPotion():
 	mPlayerId(0)
 {
 	SetScale(GetScale() * 0.5f);

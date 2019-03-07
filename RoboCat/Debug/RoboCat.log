@@ -1,29 +1,29 @@
 ﻿  RoboCatPCH.cpp
-  Engine.cpp
-  GameObject.cpp
-  GameObjectRegistry.cpp
   HealthPotion.cpp
+  SpeedPotion.cpp
+  Yarn.cpp
+  Engine.cpp
+  GameObjectRegistry.cpp
   InputState.cpp
   MemoryBitStream.cpp
-  Mouse.cpp
   Move.cpp
   MoveList.cpp
   NetworkManager.cpp
-  RoboCat.cpp
   RoboMath.cpp
   ScoreBoardManager.cpp
+  RoboCat.cpp
   SocketAddress.cpp
   SocketAddressFactory.cpp
   SocketUtil.cpp
 c:\users\b\documents\github\ics167-robocat\robocat\src\socketutil.cpp(90): warning C4100: 'ioNaxNfds': unreferenced formal parameter
-  SpeedPotion.cpp
   StringUtils.cpp
   TCPSocket.cpp
   Timing.cpp
+  GameObject.cpp
   Generating Code...
   Compiling...
+  Mouse.cpp
   UDPSocket.cpp
   World.cpp
-  Yarn.cpp
   Generating Code...
   RoboCat.vcxproj -> C:\Users\B\Documents\GitHub\ICS167-RoboCat\RoboCat\Bin\Debug\RoboCat.lib
