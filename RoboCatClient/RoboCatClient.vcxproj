@@ -42,6 +42,7 @@
     <ClInclude Include="Inc\Client.h" />
     <ClInclude Include="Inc\GraphicsDriver.h" />
     <ClInclude Include="Inc\HealthPotionClient.h" />
+    <ClInclude Include="Inc\SpeedPotionClient.h" />
     <ClInclude Include="Inc\YarnClient.h" />
     <ClInclude Include="Inc\HUD.h" />
     <ClInclude Include="Inc\NetworkManagerClient.h" />
@@ -55,7 +56,6 @@
     <ClInclude Include="Inc\MouseClient.h" />
     <ClInclude Include="Inc\RoboCatClientPCH.h" />
     <ClInclude Include="Inc\WindowManager.h" />
-    <ClInclude Include="SpeedPotionClient.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{5B4C5E90-6135-4E28-8545-FF1CAF5E4971}</ProjectGuid>

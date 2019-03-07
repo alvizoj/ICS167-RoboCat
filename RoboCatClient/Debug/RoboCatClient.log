@@ -1,4 +1,22 @@
-﻿  HealthPotionClient.cpp
+﻿  RoboCatClientPCH.cpp
+  Client.cpp
+  ClientMain.cpp
+  GraphicsDriver.cpp
+  HUD.cpp
+  HealthPotionClient.cpp
+  InputManager.cpp
+  MouseClient.cpp
+  NetworkManagerClient.cpp
+  RenderManager.cpp
+  ReplicationManagerClient.cpp
+  RoboCatClient.cpp
+  SpeedPotionClient.cpp
+  SpriteComponent.cpp
+  Texture.cpp
+  TextureManager.cpp
+  WindowManager.cpp
+  YarnClient.cpp
+  Generating Code...
   RoboCatClient.vcxproj -> C:\Users\B\Documents\GitHub\ICS167-RoboCat\Debug\RoboCatClient.exe
   Copying SDL DLLs...
   C:\Users\B\Documents\GitHub\ICS167-RoboCat\RoboCatClient\\..\SDL\lib\win\x86\libfreetype-6.dll

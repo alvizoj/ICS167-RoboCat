@@ -7,6 +7,7 @@
   RoboCatServer.cpp
   Server.cpp
   ServerMain.cpp
+  SpeedPotionServer.cpp
   YarnServer.cpp
   Generating Code...
   RoboCatServer.vcxproj -> C:\Users\B\Documents\GitHub\ICS167-RoboCat\Debug\RoboCatServer.exe

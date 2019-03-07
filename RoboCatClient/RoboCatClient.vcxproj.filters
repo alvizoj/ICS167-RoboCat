@@ -116,7 +116,7 @@
     <ClInclude Include="Inc\HealthPotionClient.h">
       <Filter>Inc</Filter>
     </ClInclude>
-    <ClInclude Include="SpeedPotionClient.h">
+    <ClInclude Include="Inc\SpeedPotionClient.h">
       <Filter>Inc</Filter>
     </ClInclude>
   </ItemGroup>

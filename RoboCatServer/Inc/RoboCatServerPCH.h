@@ -8,5 +8,6 @@
 
 #include <RoboCatServer.h>
 #include <HealthPotionServer.h>
+#include <SpeedPotionServer.h>
 #include <MouseServer.h>
 #include <YarnServer.h>

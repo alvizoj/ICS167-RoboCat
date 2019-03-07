@@ -372,6 +372,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Inc\HealthPotion.h" />
+    <ClInclude Include="Inc\SpeedPotion.h" />
     <ClInclude Include="Inc\Yarn.h" />
     <ClInclude Include="Inc\Engine.h" />
     <ClInclude Include="Inc\GameObject.h" />
@@ -419,7 +420,6 @@
     <ClCompile Include="Src\Timing.cpp">
       <FileType>CppHeader</FileType>
     </ClCompile>
-    <ClInclude Include="SpeedPotion.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Src\GameObject.cpp">

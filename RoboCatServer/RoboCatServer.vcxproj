@@ -12,6 +12,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Src\HealthPotionServer.cpp" />
+    <ClCompile Include="Src\SpeedPotionServer.cpp" />
     <ClCompile Include="Src\YarnServer.cpp" />
     <ClCompile Include="Src\ClientProxy.cpp" />
     <ClCompile Include="Src\ReplicationManagerServer.cpp" />
@@ -27,6 +28,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Inc\HealthPotionServer.h" />
+    <ClInclude Include="Inc\SpeedPotionServer.h" />
     <ClInclude Include="Inc\YarnServer.h" />
     <ClInclude Include="Inc\ClientProxy.h" />
     <ClInclude Include="Inc\ReplicationManagerServer.h" />

@@ -94,7 +94,7 @@
     <ClInclude Include="Inc\HealthPotion.h">
       <Filter>Inc</Filter>
     </ClInclude>
-    <ClInclude Include="SpeedPotion.h">
+    <ClInclude Include="Inc\SpeedPotion.h">
       <Filter>Inc</Filter>
     </ClInclude>
   </ItemGroup>

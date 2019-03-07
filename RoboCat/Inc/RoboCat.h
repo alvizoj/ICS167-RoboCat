@@ -46,7 +46,6 @@ private:
 
 	Vector3				mVelocity;
 
-
 	float				mMaxLinearSpeed;
 	float				mMaxRotationSpeed;
 
