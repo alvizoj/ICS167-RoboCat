@@ -44,9 +44,7 @@ private:
 
 	void	AdjustVelocityByThrust( float inDeltaTime );
 
-	Vector3				mVelocity;
-
-	float				mMaxLinearSpeed;
+	
 	float				mMaxRotationSpeed;
 
 	//bounce fraction when hitting various things
@@ -62,6 +60,9 @@ protected:
 	
 	float				mLastMoveTimestamp;
 
+    Vector3             mVelocity;
+    
+    float               mMaxLinearSpeed;
 	float				mThrustDir;
 	int					mHealth;
 

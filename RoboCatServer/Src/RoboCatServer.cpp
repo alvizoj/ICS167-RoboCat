@@ -1,9 +1,9 @@
 #include <RoboCatServerPCH.h>
 
-//namespace
-//{
-//	const float kSpeedBoostDelay = 3.f;
-//}
+namespace
+{
+    const float kSpeedBoostDelay = 5.f;
+}
 
 RoboCatServer::RoboCatServer() :
 	mCatControlType( ESCT_Human ),
@@ -94,9 +94,10 @@ void RoboCatServer::ReplenishHealth()
 
 void RoboCatServer::SpeedBoost()
 {
-//	if (kSpeedBoostDelay != 0.f && Timing::sInstance.GetFrameStartTime() < kSpeedBoostDelay) {
-
-//		mMaxLinearSpeed *= 2;
-	//}
+    float duration = Timing::sInstance.GetTimef() + kSpeedBoostDelay;
+    if (kSpeedBoostDelay != 0.f && duration > Timing::sInstance.GetFrameStartTime())
+    {
+        mMaxLinearSpeed *= 10;
+    }
 	NetworkManagerServer::sInstance->SetStateDirty(GetNetworkId(), ECRS_Pose);
 }
