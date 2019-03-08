@@ -112,9 +112,10 @@ void Server::SetupWorld()
 
 	CreateRandomPotion(3);
 
-	CreateRandomSpeedPotion(5);
+	CreateRandomSpeedPotion(2);
 }
 
+//here is where we would spawn potions after certain intervals i believe
 void Server::DoFrame()
 {
 	NetworkManagerServer::sInstance->ProcessIncomingPackets();

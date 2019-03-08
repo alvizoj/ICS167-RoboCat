@@ -19,5 +19,3 @@ bool SpeedPotionServer::HandleCollisionWithCat(RoboCat* inCat)
 
 	return false;
 }
-
-

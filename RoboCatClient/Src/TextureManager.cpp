@@ -14,6 +14,7 @@ TextureManager::TextureManager()
 	CacheTexture( "mouse", "../Assets/mouse.png" );
 	CacheTexture( "yarn", "../Assets/yarn.png" );
 	CacheTexture("potion", "../Assets/potion.png");
+    CacheTexture("speed", "../Assets/speed.png");
 	
 }
 
@@ -43,5 +44,4 @@ bool TextureManager::CacheTexture( string inTextureName, const char* inFileName 
 	mNameToTextureMap[ inTextureName ] = newTexture;
 
 	return true;
-
 }

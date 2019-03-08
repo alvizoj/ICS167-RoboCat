@@ -1,6 +1,5 @@
 #include <RoboCatServerPCH.h>
 
-
 HealthPotionServer::HealthPotionServer()
 {
 }
@@ -20,5 +19,3 @@ bool HealthPotionServer::HandleCollisionWithCat(RoboCat* inCat)
 
 	return false;
 }
-
-
