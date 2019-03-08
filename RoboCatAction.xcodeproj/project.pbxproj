@@ -76,6 +76,14 @@
 		035E46461C0651FB00CCB512 /* Server.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 035E463D1C0651FB00CCB512 /* Server.cpp */; };
 		035E46471C0651FB00CCB512 /* ServerMain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 035E463E1C0651FB00CCB512 /* ServerMain.cpp */; };
 		035E46481C0651FB00CCB512 /* YarnServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 035E463F1C0651FB00CCB512 /* YarnServer.cpp */; };
+		53AB3113223301F0006F7E25 /* SpeedPotionClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53AB3111223301F0006F7E25 /* SpeedPotionClient.cpp */; };
+		53AB3114223301F0006F7E25 /* HealthPotionClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53AB3112223301F0006F7E25 /* HealthPotionClient.cpp */; };
+		53AB31192233020D006F7E25 /* HealthPotionServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53AB31172233020D006F7E25 /* HealthPotionServer.cpp */; };
+		53AB311A2233020D006F7E25 /* SpeedPotionServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53AB31182233020D006F7E25 /* SpeedPotionServer.cpp */; };
+		53AB311D2233021B006F7E25 /* HealthPotion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53AB311B2233021A006F7E25 /* HealthPotion.cpp */; };
+		53AB311E2233021B006F7E25 /* HealthPotion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53AB311B2233021A006F7E25 /* HealthPotion.cpp */; };
+		53AB311F2233021B006F7E25 /* SpeedPotion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53AB311C2233021B006F7E25 /* SpeedPotion.cpp */; };
+		53AB31202233021B006F7E25 /* SpeedPotion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53AB311C2233021B006F7E25 /* SpeedPotion.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -197,6 +205,18 @@
 		035E463D1C0651FB00CCB512 /* Server.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Server.cpp; sourceTree = "<group>"; };
 		035E463E1C0651FB00CCB512 /* ServerMain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ServerMain.cpp; sourceTree = "<group>"; };
 		035E463F1C0651FB00CCB512 /* YarnServer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = YarnServer.cpp; sourceTree = "<group>"; };
+		53AB310F223301E0006F7E25 /* HealthPotionClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HealthPotionClient.h; sourceTree = "<group>"; };
+		53AB3110223301E0006F7E25 /* SpeedPotionClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpeedPotionClient.h; sourceTree = "<group>"; };
+		53AB3111223301F0006F7E25 /* SpeedPotionClient.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = SpeedPotionClient.cpp; path = "/Users/josephalvizo/Documents/ICS167/ICS167-RoboCat/RoboCatClient/Src/SpeedPotionClient.cpp"; sourceTree = "<absolute>"; };
+		53AB3112223301F0006F7E25 /* HealthPotionClient.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = HealthPotionClient.cpp; path = "/Users/josephalvizo/Documents/ICS167/ICS167-RoboCat/RoboCatClient/Src/HealthPotionClient.cpp"; sourceTree = "<absolute>"; };
+		53AB3115223301FB006F7E25 /* SpeedPotionServer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpeedPotionServer.h; sourceTree = "<group>"; };
+		53AB3116223301FB006F7E25 /* HealthPotionServer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HealthPotionServer.h; sourceTree = "<group>"; };
+		53AB31172233020D006F7E25 /* HealthPotionServer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = HealthPotionServer.cpp; path = "/Users/josephalvizo/Documents/ICS167/ICS167-RoboCat/RoboCatServer/Src/HealthPotionServer.cpp"; sourceTree = "<absolute>"; };
+		53AB31182233020D006F7E25 /* SpeedPotionServer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = SpeedPotionServer.cpp; path = "/Users/josephalvizo/Documents/ICS167/ICS167-RoboCat/RoboCatServer/Src/SpeedPotionServer.cpp"; sourceTree = "<absolute>"; };
+		53AB311B2233021A006F7E25 /* HealthPotion.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = HealthPotion.cpp; path = "/Users/josephalvizo/Documents/ICS167/ICS167-RoboCat/Src/HealthPotion.cpp"; sourceTree = "<absolute>"; };
+		53AB311C2233021B006F7E25 /* SpeedPotion.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = SpeedPotion.cpp; path = "/Users/josephalvizo/Documents/ICS167/ICS167-RoboCat/Src/SpeedPotion.cpp"; sourceTree = "<absolute>"; };
+		53AB312122330229006F7E25 /* SpeedPotion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SpeedPotion.h; path = RoboCat/Inc/SpeedPotion.h; sourceTree = SOURCE_ROOT; };
+		53AB312222330229006F7E25 /* HealthPotion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HealthPotion.h; path = RoboCat/Inc/HealthPotion.h; sourceTree = SOURCE_ROOT; };
 		9202F92D1BFFE0DF00C30060 /* RoboCatActionServer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RoboCatActionServer; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -230,6 +250,8 @@
 		033B27101C065871005672A2 /* Inc */ = {
 			isa = PBXGroup;
 			children = (
+				53AB310F223301E0006F7E25 /* HealthPotionClient.h */,
+				53AB3110223301E0006F7E25 /* SpeedPotionClient.h */,
 				033B27111C065871005672A2 /* Client.h */,
 				033B27121C065871005672A2 /* GraphicsDriver.h */,
 				033B27131C065871005672A2 /* HUD.h */,
@@ -252,6 +274,8 @@
 		033B27221C065871005672A2 /* Src */ = {
 			isa = PBXGroup;
 			children = (
+				53AB3112223301F0006F7E25 /* HealthPotionClient.cpp */,
+				53AB3111223301F0006F7E25 /* SpeedPotionClient.cpp */,
 				033B27231C065871005672A2 /* Client.cpp */,
 				033B27241C065871005672A2 /* ClientMain.cpp */,
 				033B27251C065871005672A2 /* GraphicsDriver.cpp */,
@@ -284,6 +308,8 @@
 		035E462B1C0651FB00CCB512 /* Inc */ = {
 			isa = PBXGroup;
 			children = (
+				53AB3116223301FB006F7E25 /* HealthPotionServer.h */,
+				53AB3115223301FB006F7E25 /* SpeedPotionServer.h */,
 				035E462C1C0651FB00CCB512 /* ClientProxy.h */,
 				035E462D1C0651FB00CCB512 /* MouseServer.h */,
 				035E462E1C0651FB00CCB512 /* NetworkManagerServer.h */,
@@ -299,6 +325,8 @@
 		035E46361C0651FB00CCB512 /* Src */ = {
 			isa = PBXGroup;
 			children = (
+				53AB31172233020D006F7E25 /* HealthPotionServer.cpp */,
+				53AB31182233020D006F7E25 /* SpeedPotionServer.cpp */,
 				035E46371C0651FB00CCB512 /* ClientProxy.cpp */,
 				035E46381C0651FB00CCB512 /* MouseServer.cpp */,
 				035E46391C0651FB00CCB512 /* NetworkManagerServer.cpp */,
@@ -344,6 +372,8 @@
 		923CDDD21BFFE22800802F90 /* Inc */ = {
 			isa = PBXGroup;
 			children = (
+				53AB312222330229006F7E25 /* HealthPotion.h */,
+				53AB312122330229006F7E25 /* SpeedPotion.h */,
 				035E45E31C064F3000CCB512 /* Engine.h */,
 				035E45E41C064F3000CCB512 /* GameObject.h */,
 				035E45E51C064F3000CCB512 /* GameObjectRegistry.h */,
@@ -377,6 +407,8 @@
 		923CDDD31BFFE22F00802F90 /* Src */ = {
 			isa = PBXGroup;
 			children = (
+				53AB311B2233021A006F7E25 /* HealthPotion.cpp */,
+				53AB311C2233021B006F7E25 /* SpeedPotion.cpp */,
 				035E45FD1C064F3E00CCB512 /* Engine.cpp */,
 				035E45FE1C064F3E00CCB512 /* GameObject.cpp */,
 				035E45FF1C064F3E00CCB512 /* GameObjectRegistry.cpp */,
@@ -513,9 +545,11 @@
 				033B26EE1C065833005672A2 /* NetworkManager.cpp in Sources */,
 				033B273B1C065871005672A2 /* ReplicationManagerClient.cpp in Sources */,
 				033B26EF1C065833005672A2 /* InputState.cpp in Sources */,
+				53AB311E2233021B006F7E25 /* HealthPotion.cpp in Sources */,
 				033B26F01C065833005672A2 /* TCPSocket.cpp in Sources */,
 				033B26F11C065833005672A2 /* StringUtils.cpp in Sources */,
 				033B26F21C065833005672A2 /* RoboCatPCH.cpp in Sources */,
+				53AB31202233021B006F7E25 /* SpeedPotion.cpp in Sources */,
 				033B26F31C065833005672A2 /* World.cpp in Sources */,
 				033B26F41C065833005672A2 /* Timing.cpp in Sources */,
 				033B273C1C065871005672A2 /* RoboCatClient.cpp in Sources */,
@@ -538,11 +572,13 @@
 				033B27341C065871005672A2 /* ClientMain.cpp in Sources */,
 				033B27391C065871005672A2 /* NetworkManagerClient.cpp in Sources */,
 				033B273D1C065871005672A2 /* RoboCatClientPCH.cpp in Sources */,
+				53AB3113223301F0006F7E25 /* SpeedPotionClient.cpp in Sources */,
 				033B27331C065871005672A2 /* Client.cpp in Sources */,
 				033B27361C065871005672A2 /* HUD.cpp in Sources */,
 				033B27021C065833005672A2 /* GameObjectRegistry.cpp in Sources */,
 				033B27371C065871005672A2 /* InputManager.cpp in Sources */,
 				033B27031C065833005672A2 /* Engine.cpp in Sources */,
+				53AB3114223301F0006F7E25 /* HealthPotionClient.cpp in Sources */,
 				033B27351C065871005672A2 /* GraphicsDriver.cpp in Sources */,
 				033B27061C065833005672A2 /* SocketAddress.cpp in Sources */,
 			);
@@ -555,9 +591,12 @@
 				035E46411C0651FB00CCB512 /* MouseServer.cpp in Sources */,
 				035E46261C064F3E00CCB512 /* UDPSocket.cpp in Sources */,
 				035E461A1C064F3E00CCB512 /* MoveList.cpp in Sources */,
+				53AB311F2233021B006F7E25 /* SpeedPotion.cpp in Sources */,
 				035E46421C0651FB00CCB512 /* NetworkManagerServer.cpp in Sources */,
+				53AB311D2233021B006F7E25 /* HealthPotion.cpp in Sources */,
 				035E46211C064F3E00CCB512 /* SocketAddressFactory.cpp in Sources */,
 				035E461B1C064F3E00CCB512 /* NetworkManager.cpp in Sources */,
+				53AB311A2233020D006F7E25 /* SpeedPotionServer.cpp in Sources */,
 				035E46161C064F3E00CCB512 /* InputState.cpp in Sources */,
 				035E46241C064F3E00CCB512 /* TCPSocket.cpp in Sources */,
 				035E46231C064F3E00CCB512 /* StringUtils.cpp in Sources */,
@@ -565,6 +604,7 @@
 				035E46271C064F3E00CCB512 /* World.cpp in Sources */,
 				035E46251C064F3E00CCB512 /* Timing.cpp in Sources */,
 				035E461F1C064F3E00CCB512 /* ScoreBoardManager.cpp in Sources */,
+				53AB31192233020D006F7E25 /* HealthPotionServer.cpp in Sources */,
 				035E46221C064F3E00CCB512 /* SocketUtil.cpp in Sources */,
 				035E46191C064F3E00CCB512 /* Move.cpp in Sources */,
 				035E46281C064F3E00CCB512 /* Yarn.cpp in Sources */,

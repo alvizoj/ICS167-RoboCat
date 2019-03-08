@@ -2,6 +2,42 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:/Users/josh/Documents/Multiplayer Game Programming/MultiplayerBook/Chapter 6/RoboCatAction/RoboCatAction.xcodeproj">
+      location = "group:/Users/josephalvizo/Documents/ICS167/ICS167-RoboCat/RoboCatServer/Src/HealthPotionServer.cpp">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/josephalvizo/Documents/ICS167/ICS167-RoboCat/RoboCatServer/Src/SpeedPotionServer.cpp">
+   </FileRef>
+   <FileRef
+      location = "group:../RoboCatServer/Inc/HealthPotionServer.h">
+   </FileRef>
+   <FileRef
+      location = "group:../RoboCatServer/Inc/SpeedPotionServer.h">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/josephalvizo/Documents/ICS167/ICS167-RoboCat/RoboCatClient/Src/HealthPotionClient.cpp">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/josephalvizo/Documents/ICS167/ICS167-RoboCat/RoboCatClient/Src/SpeedPotionClient.cpp">
+   </FileRef>
+   <FileRef
+      location = "group:../RoboCatClient/Inc/HealthPotionClient.h">
+   </FileRef>
+   <FileRef
+      location = "group:../RoboCatClient/Inc/SpeedPotionClient.h">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/josephalvizo/Documents/ICS167/ICS167-RoboCat/Src/HealthPotion.cpp">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/josephalvizo/Documents/ICS167/ICS167-RoboCat/Src/SpeedPotion.cpp">
+   </FileRef>
+   <FileRef
+      location = "group:../RoboCat/Inc/HealthPotion.h">
+   </FileRef>
+   <FileRef
+      location = "group:../RoboCat/Inc/SpeedPotion.h">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>
