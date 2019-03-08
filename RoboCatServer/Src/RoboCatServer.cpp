@@ -1,15 +1,14 @@
 #include <RoboCatServerPCH.h>
 
-namespace
-{
-    const float kSpeedBoostDelay = 5.f;
-}
-
 RoboCatServer::RoboCatServer() :
 	mCatControlType( ESCT_Human ),
 	mTimeOfNextShot( 0.f ),
 	mTimeBetweenShots( 0.2f )
 {}
+
+namespace {
+    const float kSpeedBoostDuration = 5.f;
+}
 
 void RoboCatServer::HandleDying()
 {
@@ -23,7 +22,13 @@ void RoboCatServer::Update()
 	Vector3 oldLocation = GetLocation();
 	Vector3 oldVelocity = GetVelocity();
 	float oldRotation = GetRotation();
-
+    
+    //if current time is > duration, reset speed
+    if (boosted && Timing::sInstance.GetTimef() > mTimeSpeedBoostEnds){
+        boosted = false;
+        mMaxLinearSpeed /= 3;
+    }
+    
 	ClientProxyPtr client = NetworkManagerServer::sInstance->GetClientProxy( GetPlayerId() );
 	if( client )
 	{
@@ -94,10 +99,13 @@ void RoboCatServer::ReplenishHealth()
 
 void RoboCatServer::SpeedBoost()
 {
-    float duration = Timing::sInstance.GetTimef() + kSpeedBoostDelay;
-    if (kSpeedBoostDelay != 0.f && duration > Timing::sInstance.GetFrameStartTime())
+    float current_time = Timing::sInstance.GetFrameStartTime();
+    mTimeSpeedBoostEnds = current_time + kSpeedBoostDuration;
+    if ((mMaxLinearSpeed < 150))
     {
-        mMaxLinearSpeed *= 10;
+        mMaxLinearSpeed *= 3;
+        boosted = true;
+        NetworkManagerServer::sInstance->SetStateDirty(GetNetworkId(), ECRS_Pose);
     }
-	NetworkManagerServer::sInstance->SetStateDirty(GetNetworkId(), ECRS_Pose);
+	
 }

@@ -27,8 +27,9 @@ private:
 
 	ECatControlType	mCatControlType;
 
-
-	float		mTimeOfNextShot;
+    float		mTimeOfNextShot;
 	float		mTimeBetweenShots;
-
+    
+    bool        boosted;
+    float       mTimeSpeedBoostEnds;
 };
