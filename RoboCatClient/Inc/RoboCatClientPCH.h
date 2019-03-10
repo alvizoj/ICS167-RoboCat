@@ -15,6 +15,7 @@
 #include <HealthPotionClient.h>
 #include <SpeedPotionClient.h>
 #include <MouseClient.h>
+#include <MissileClient.h>
 #include <YarnClient.h>
 
 #include <HUD.h>

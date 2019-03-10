@@ -76,6 +76,10 @@
 		035E46461C0651FB00CCB512 /* Server.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 035E463D1C0651FB00CCB512 /* Server.cpp */; };
 		035E46471C0651FB00CCB512 /* ServerMain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 035E463E1C0651FB00CCB512 /* ServerMain.cpp */; };
 		035E46481C0651FB00CCB512 /* YarnServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 035E463F1C0651FB00CCB512 /* YarnServer.cpp */; };
+		532081432234A29E002D7AE4 /* Missile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 532081412234A29E002D7AE4 /* Missile.cpp */; };
+		532081442234A29E002D7AE4 /* Missile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 532081412234A29E002D7AE4 /* Missile.cpp */; };
+		532081482234A31A002D7AE4 /* MissileClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 532081462234A31A002D7AE4 /* MissileClient.cpp */; };
+		5320814C2234A3C0002D7AE4 /* MissileServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5320814A2234A3C0002D7AE4 /* MissileServer.cpp */; };
 		53AB3113223301F0006F7E25 /* SpeedPotionClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53AB3111223301F0006F7E25 /* SpeedPotionClient.cpp */; };
 		53AB3114223301F0006F7E25 /* HealthPotionClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53AB3112223301F0006F7E25 /* HealthPotionClient.cpp */; };
 		53AB31192233020D006F7E25 /* HealthPotionServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53AB31172233020D006F7E25 /* HealthPotionServer.cpp */; };
@@ -205,6 +209,12 @@
 		035E463D1C0651FB00CCB512 /* Server.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Server.cpp; sourceTree = "<group>"; };
 		035E463E1C0651FB00CCB512 /* ServerMain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ServerMain.cpp; sourceTree = "<group>"; };
 		035E463F1C0651FB00CCB512 /* YarnServer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = YarnServer.cpp; sourceTree = "<group>"; };
+		532081412234A29E002D7AE4 /* Missile.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Missile.cpp; path = RoboCat/Src/Missile.cpp; sourceTree = SOURCE_ROOT; };
+		532081462234A31A002D7AE4 /* MissileClient.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MissileClient.cpp; sourceTree = "<group>"; };
+		532081492234A340002D7AE4 /* MissileClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MissileClient.h; path = RoboCatClient/Inc/MissileClient.h; sourceTree = SOURCE_ROOT; };
+		5320814A2234A3C0002D7AE4 /* MissileServer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = MissileServer.cpp; path = RoboCatServer/Src/MissileServer.cpp; sourceTree = SOURCE_ROOT; };
+		5320814D2234A43F002D7AE4 /* Missile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Missile.h; path = RoboCat/Inc/Missile.h; sourceTree = SOURCE_ROOT; };
+		5320814E2234A4A8002D7AE4 /* MissileServer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MissileServer.h; sourceTree = "<group>"; };
 		53AB310F223301E0006F7E25 /* HealthPotionClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HealthPotionClient.h; sourceTree = "<group>"; };
 		53AB3110223301E0006F7E25 /* SpeedPotionClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpeedPotionClient.h; sourceTree = "<group>"; };
 		53AB3111223301F0006F7E25 /* SpeedPotionClient.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = SpeedPotionClient.cpp; path = "/Users/josephalvizo/Documents/ICS167/ICS167-RoboCat/RoboCatClient/Src/SpeedPotionClient.cpp"; sourceTree = "<absolute>"; };
@@ -256,6 +266,7 @@
 				033B27121C065871005672A2 /* GraphicsDriver.h */,
 				033B27131C065871005672A2 /* HUD.h */,
 				033B27141C065871005672A2 /* InputManager.h */,
+				532081492234A340002D7AE4 /* MissileClient.h */,
 				033B27151C065871005672A2 /* MouseClient.h */,
 				033B27161C065871005672A2 /* NetworkManagerClient.h */,
 				033B27171C065871005672A2 /* RenderManager.h */,
@@ -277,6 +288,7 @@
 				53AB3112223301F0006F7E25 /* HealthPotionClient.cpp */,
 				53AB3111223301F0006F7E25 /* SpeedPotionClient.cpp */,
 				033B27231C065871005672A2 /* Client.cpp */,
+				532081462234A31A002D7AE4 /* MissileClient.cpp */,
 				033B27241C065871005672A2 /* ClientMain.cpp */,
 				033B27251C065871005672A2 /* GraphicsDriver.cpp */,
 				033B27261C065871005672A2 /* HUD.cpp */,
@@ -311,6 +323,7 @@
 				53AB3116223301FB006F7E25 /* HealthPotionServer.h */,
 				53AB3115223301FB006F7E25 /* SpeedPotionServer.h */,
 				035E462C1C0651FB00CCB512 /* ClientProxy.h */,
+				5320814E2234A4A8002D7AE4 /* MissileServer.h */,
 				035E462D1C0651FB00CCB512 /* MouseServer.h */,
 				035E462E1C0651FB00CCB512 /* NetworkManagerServer.h */,
 				035E462F1C0651FB00CCB512 /* ReplicationManagerServer.h */,
@@ -326,6 +339,7 @@
 			isa = PBXGroup;
 			children = (
 				53AB31172233020D006F7E25 /* HealthPotionServer.cpp */,
+				5320814A2234A3C0002D7AE4 /* MissileServer.cpp */,
 				53AB31182233020D006F7E25 /* SpeedPotionServer.cpp */,
 				035E46371C0651FB00CCB512 /* ClientProxy.cpp */,
 				035E46381C0651FB00CCB512 /* MouseServer.cpp */,
@@ -372,6 +386,7 @@
 		923CDDD21BFFE22800802F90 /* Inc */ = {
 			isa = PBXGroup;
 			children = (
+				5320814D2234A43F002D7AE4 /* Missile.h */,
 				53AB312222330229006F7E25 /* HealthPotion.h */,
 				53AB312122330229006F7E25 /* SpeedPotion.h */,
 				035E45E31C064F3000CCB512 /* Engine.h */,
@@ -429,6 +444,7 @@
 				035E460E1C064F3E00CCB512 /* TCPSocket.cpp */,
 				035E460F1C064F3E00CCB512 /* Timing.cpp */,
 				035E46101C064F3E00CCB512 /* UDPSocket.cpp */,
+				532081412234A29E002D7AE4 /* Missile.cpp */,
 				035E46111C064F3E00CCB512 /* World.cpp */,
 				035E46121C064F3E00CCB512 /* Yarn.cpp */,
 			);
@@ -554,12 +570,14 @@
 				033B273C1C065871005672A2 /* RoboCatClient.cpp in Sources */,
 				033B27421C065871005672A2 /* YarnClient.cpp in Sources */,
 				033B26F51C065833005672A2 /* ScoreBoardManager.cpp in Sources */,
+				532081482234A31A002D7AE4 /* MissileClient.cpp in Sources */,
 				033B26F61C065833005672A2 /* SocketUtil.cpp in Sources */,
 				033B27381C065871005672A2 /* MouseClient.cpp in Sources */,
 				033B273F1C065871005672A2 /* Texture.cpp in Sources */,
 				033B273A1C065871005672A2 /* RenderManager.cpp in Sources */,
 				033B26F71C065833005672A2 /* Move.cpp in Sources */,
 				033B27411C065871005672A2 /* WindowManager.cpp in Sources */,
+				532081442234A29E002D7AE4 /* Missile.cpp in Sources */,
 				033B26F81C065833005672A2 /* Yarn.cpp in Sources */,
 				033B26FC1C065833005672A2 /* RoboMath.cpp in Sources */,
 				53AB312A223303CF006F7E25 /* SpeedPotion.cpp in Sources */,
@@ -616,8 +634,10 @@
 				035E46141C064F3E00CCB512 /* GameObject.cpp in Sources */,
 				035E46461C0651FB00CCB512 /* Server.cpp in Sources */,
 				035E461C1C064F3E00CCB512 /* RoboCat.cpp in Sources */,
+				5320814C2234A3C0002D7AE4 /* MissileServer.cpp in Sources */,
 				035E46181C064F3E00CCB512 /* Mouse.cpp in Sources */,
 				035E46151C064F3E00CCB512 /* GameObjectRegistry.cpp in Sources */,
+				532081432234A29E002D7AE4 /* Missile.cpp in Sources */,
 				035E46131C064F3E00CCB512 /* Engine.cpp in Sources */,
 				035E46481C0651FB00CCB512 /* YarnServer.cpp in Sources */,
 				035E46451C0651FB00CCB512 /* RoboCatServerPCH.cpp in Sources */,

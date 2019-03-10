@@ -24,6 +24,7 @@ void RoboCatServer::Update()
 	float oldRotation = GetRotation();
     
     //if current time is > duration, reset speed
+    HandleSPRespawn();
     if (boosted && Timing::sInstance.GetTimef() > mTimeSpeedBoostEnds){
         boosted = false;
         mMaxLinearSpeed /= 3;
@@ -45,6 +46,7 @@ void RoboCatServer::Update()
 	}
 
 	HandleShooting();
+    HandleShootingMissile();
 
 	if( !RoboMath::Is2DVectorEqual( oldLocation, GetLocation() ) ||
 		!RoboMath::Is2DVectorEqual( oldVelocity, GetVelocity() ) ||
@@ -66,6 +68,21 @@ void RoboCatServer::HandleShooting()
 		YarnPtr yarn = std::static_pointer_cast< Yarn >( GameObjectRegistry::sInstance->CreateGameObject( 'YARN' ) );
 		yarn->InitFromShooter( this );
 	}
+}
+
+void RoboCatServer::HandleShootingMissile()
+{
+    float time = Timing::sInstance.GetFrameStartTime();
+    if( mIsShootingMissile && Timing::sInstance.GetFrameStartTime() > mTimeOfNextShot )
+    {
+        //not exact, but okay
+        mTimeOfNextShot = time + mTimeBetweenShots;
+        
+        //fire!
+        MissilePtr miss = std::static_pointer_cast<
+            Missile >( GameObjectRegistry::sInstance->CreateGameObject( 'MISL' ) );
+        miss->InitFromShooter( this );
+    }
 }
 
 void RoboCatServer::TakeDamage( int inDamagingPlayerId )
@@ -91,6 +108,29 @@ void RoboCatServer::TakeDamage( int inDamagingPlayerId )
 	NetworkManagerServer::sInstance->SetStateDirty( GetNetworkId(), ECRS_Health );
 }
 
+void RoboCatServer::TakeMissileDamage( int inDamagingPlayerId )
+{
+    mHealth -= 3;
+    if( mHealth <= 0.f )
+    {
+        //score one for damaging player...
+        ScoreBoardManager::sInstance->IncScore( inDamagingPlayerId, 1 );
+        
+        //and you want to die
+        SetDoesWantToDie( true );
+        
+        //tell the client proxy to make you a new cat
+        ClientProxyPtr clientProxy = NetworkManagerServer::sInstance->GetClientProxy( GetPlayerId() );
+        if( clientProxy )
+        {
+            clientProxy->HandleCatDied();
+        }
+    }
+    
+    //tell the world our health dropped
+    NetworkManagerServer::sInstance->SetStateDirty( GetNetworkId(), ECRS_Health );
+}
+
 void RoboCatServer::ReplenishHealth()
 {
 	mHealth = 10;
@@ -108,4 +148,14 @@ void RoboCatServer::SpeedBoost()
         NetworkManagerServer::sInstance->SetStateDirty(GetNetworkId(), ECRS_Pose);
     }
 	
+}
+
+void RoboCatServer::HandleSPRespawn(){
+    
+    if( SPTimeToRespawn != 0.f && Timing::sInstance.GetFrameStartTime() > SPTimeToRespawn )
+    {
+        static_cast< Server* > ( Engine::sInstance.get() )->CreateRandomSpeedPotion(1);
+        SPTimeToRespawn = 0.f;
+        //SpeedPotionServer::getSPRespawnTime();
+    }
 }

@@ -14,6 +14,7 @@ RoboCat::RoboCat() :
 	mThrustDir( 0.f ),
 	mPlayerId( 0 ),
 	mIsShooting( false ),
+    mIsShootingMissile(false),
 	mHealth( 10 )
 {
 	SetCollisionRadius( 0.5f );
@@ -32,7 +33,8 @@ void RoboCat::ProcessInput( float inDeltaTime, const InputState& inInputState )
 	mThrustDir = inputForwardDelta;
 
 
-	mIsShooting = inInputState.IsShooting(); 
+	mIsShooting = inInputState.IsShooting();
+    mIsShootingMissile = inInputState.IsShootingMissile();
 
 }
 

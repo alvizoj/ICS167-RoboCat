@@ -16,6 +16,10 @@ bool SpeedPotionServer::HandleCollisionWithCat(RoboCat* inCat)
 	SetDoesWantToDie(true);
 
 	static_cast<RoboCatServer*>(inCat)->SpeedBoost();
+    mTimeToRespawn = Timing::sInstance.GetFrameStartTime() + SPRespawnDelay;
+    
 
 	return false;
 }
+
+

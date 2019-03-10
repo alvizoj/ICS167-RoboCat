@@ -15,6 +15,7 @@ public:
 	void SetCatControlType( ECatControlType inCatControlType ) { mCatControlType = inCatControlType; }
 
 	void TakeDamage( int inDamagingPlayerId );
+    void TakeMissileDamage( int inDamagingPlayerId);
 	void ReplenishHealth();
 	void SpeedBoost();
 
@@ -24,6 +25,11 @@ protected:
 private:
 
 	void HandleShooting();
+    void HandleShootingMissile();
+    void HandleSPRespawn();
+    
+    float SPTimeToRespawn = 10;
+    float HPTimeToRespawn = 10;
 
 	ECatControlType	mCatControlType;
 

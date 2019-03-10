@@ -15,6 +15,7 @@ TextureManager::TextureManager()
 	CacheTexture( "yarn", "../Assets/yarn.png" );
 	CacheTexture("potion", "../Assets/potion.png");
     CacheTexture("speed", "../Assets/speed.png");
+    CacheTexture("missile", "../Assets/missile.png");
 	
 }
 
